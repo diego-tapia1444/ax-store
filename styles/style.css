@@ -46,7 +46,7 @@ header {
 }
 
 .navbar__links a.is-active, .navbar__links a:hover {
-    background:red;
+    background:#1800f0;
 }
 
 /* HAMBURGUESA*/
@@ -95,7 +95,7 @@ body {
 }
 
 .titulo__contenedor {
-    background:linear-gradient(-90deg, #850a03,#F00000);
+    background:linear-gradient(-90deg, #8c00ff,#1800f0);
     padding-block: 30px;
     margin-inline: 50px;
     margin-block: 20px;
@@ -130,7 +130,7 @@ body {
 }
 
 .producto__contenedor article:hover {
-    transform: translateY(5px);
+    transform: translateY(-5px);
     box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.3);
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 .producto__descripcion button {
-    background:red;
+    background:#1800f0;
     border-radius: 20px;
     border: none;
     color: white;
@@ -269,7 +269,7 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: red;
+	background-color: #1800f0;
     border-radius: 10px;
 	color: #fff;
 	font-size: 1.1rem;
