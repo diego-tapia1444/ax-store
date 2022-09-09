@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>AX Store - Inicio</title>
 </head>
@@ -28,9 +31,32 @@
     </header>
     <main>
         <section>
-            <div class="imagen__contenedor">
-                <img src="./assets/img/img01.jpg" alt="TECLADO GAMING ASUS ROG FALCHION TKL RED RGB" >
-            </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="carousel1">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="carousel2">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="carousel3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
         </section> 
 
         <section>
@@ -40,40 +66,53 @@
         </section>
 
         <section>
-            <div class="contenedor">
-                <div class="producto__contenedor">
-                    <article>
-                        <img src="./assets/img/producto01.jpg" alt="TECLADO HYPERX ALLOY ORIGINS CORE">
-                        <div class="producto__descripcion">
-                            <h3>TECLADO HYPERX ALLOY ORIGINS CORE</h3>
-                            <button>$ 93.00</button>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/img/producto02.jpg" alt="TECLADO LOGITECH G413 CARBON">
-                        <div class="producto__descripcion">
-                            <h3>TECLADO LOGITECH G413 CARBON</h3>
-                            <button>$ 120.00</button>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/img/producto03.jpg" alt="MOUSE LOGITECH G502 LIGHTSPEED">
-                        <div class="producto__descripcion">
-                            <h3>MOUSE LOGITECH G502 LIGHTSPEED</h3>
-                            <button>$ 190.00</button>
-                        </div>
-                    </article>
+            <div class="container mb-4">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="producto">
+                            <img src="./assets/img/producto01.jpg" alt="TECLADO HYPERX ALLOY ORIGINS CORE">
+                            <div class="producto__descripcion">
+                                <h4>TECLADO HYPERX ALLOY ORIGINS CORE</h4>
+                                <button>$ 93.00</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="producto">
+                            <img src="./assets/img/producto02.jpg" alt="TECLADO LOGITECH G413 CARBON">
+                            <div class="producto__descripcion">
+                                <h4>TECLADO LOGITECH G413 CARBON</h4>
+                                <button>$ 120.00</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="producto">
+                            <img src="./assets/img/producto03.jpg" alt="MOUSE LOGITECH G502 LIGHTSPEED">
+                            <div class="producto__descripcion">
+                                <h4>MOUSE LOGITECH G502 LIGHTSPEED</h4>
+                                <button>$ 190.00</button>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
+
     <footer>
-        <h3 class="footer__redes">ENCUENTRENOS EN:</h3>
-        <div>
-            <a href="https://www.facebook.com/" target="_blank"><img class="footer__redes-link" src="./assets/svg/facebook.svg" alt="Facebook"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img class="footer__redes-link" src="./assets/svg/twitter.svg" alt="Twitter"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="footer__redes-link"  src="./assets/svg/instagram.svg" alt="Instagram"></a>
+        <div class="mt-5 text-center text-white footer__bg-custom">
+            <div class="container p-4 pb-0">
+                <div class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>           
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center p-3 footer__bg-black">
+                <p>© 2022 Copyright: <a class="text-white" href="index.html">AXStore.com</a></p>
+            </div>
         </div>
     </footer>
 </body>
