@@ -1,0 +1,22 @@
+{
+  "name": "ax-store",
+  "version": "1.0.0",
+  "description": "Proyecto Desarrollo Web de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego-tapia1444/ax-store.git"
+  },
+  "author": "Diego Tapia Vega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego-tapia1444/ax-store/issues"
+  },
+  "homepage": "https://github.com/diego-tapia1444/ax-store#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/style.css">
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!--Icono-->
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    
     <title>AX Store - Productos</title>
 </head>
 <body>
     <header>
+        <!-- Navbar -->
         <nav class="navbar">
             <h1>AX STORE</h1>
             <div class="navbar__links">
@@ -22,6 +38,7 @@
                 <a href="contacto.html">CONTACTO</a>
             </div>
 
+            <!--Menu Hambúrguesa-->
             <button class="hamburguesa">
                 <span></span>
                 <span></span>
@@ -30,93 +47,113 @@
         </nav>
     </header>
     <main>
+
         <section>
-            <div class="titulo__contenedor">
+            <div class="titulo">
                 <h2>NUESTROS PRODUCTOS</h2>          
             </div>             
         </section>
 
+        <!--Contenedor de tarjetas-->
         <section>
             <div class="container mb-4">
                 <div class="row g-4">
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto01.jpg" alt="TECLADO HYPERX ALLOY ORIGINS CORE">
                             <div class="producto__descripcion">
-                                <h4>TECLADO HYPERX ALLOY ORIGINS CORE</h4>
-                                <button>$ 93.00</button>
+                                <h4 class="producto__descripcion-titulo">TECLADO HYPERX ALLOY ORIGINS CORE</h4>
+                                <button class="producto__descripcion-boton">$ 93.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto02.jpg" alt="TECLADO LOGITECH G413 CARBON">
                             <div class="producto__descripcion">
-                                <h4>TECLADO LOGITECH G413 CARBON</h4>
-                                <button>$ 120.00</button>
+                                <h4 class="producto__descripcion-titulo">TECLADO LOGITECH G413 CARBON</h4>
+                                <button class="producto__descripcion-boton">$ 120.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto03.jpg" alt="TECLADO INALAMBRICO LOGITECH G915 TKL">
                             <div class="producto__descripcion">
-                                <h4>TECLADO INALAMBRICO LOGITECH G915 TKL</h4>
-                                <button>$ 190.00</button>
+                                <h4 class="producto__descripcion-titulo">TECLADO INALAMBRICO LOGITECH G915 TKL</h4>
+                                <button class="producto__descripcion-boton">$ 190.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto04.jpg" alt="MOUSE LOGITECH G G203 LIGHTSYNC">
                             <div class="producto__descripcion">
-                                <h4>MOUSE LOGITECH G G203 LIGHTSYNC</h4>
-                                <button>$ 30.00</button>
+                                <h4 class="producto__descripcion-titulo">MOUSE LOGITECH G G203 LIGHTSYNC</h4>
+                                <button class="producto__descripcion-boton">$ 30.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto05.jpg" alt="MOUSE LOGITECH G502 LIGHTSPEED">
                             <div class="producto__descripcion">
-                                <h4>MOUSE LOGITECH G502 LIGHTSPEED</h4>
-                                <button>$ 190.00</button>
+                                <h4 class="producto__descripcion-titulo">MOUSE LOGITECH G502 LIGHTSPEED</h4>
+                                <button class="producto__descripcion-boton">$ 190.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto06.jpg" alt="AURICULAR HYPERX CLOUD STINGER CORE">
                             <div class="producto__descripcion">
-                                <h4>AURICULAR HYPERX CLOUD STINGER CORE</h4>
-                                <button>$ 75.00</button>
+                                <h4 class="producto__descripcion-titulo">AURICULAR HYPERX CLOUD STINGER CORE</h4>
+                                <button class="producto__descripcion-boton">$ 75.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto07.jpg" alt="MOUSE VSG AQUILAR AIR NEGRO MATE">
                             <div class="producto__descripcion">
-                                <h4>MOUSE VSG AQUILAR AIR NEGRO MATE</h4>
-                                <button>$ 25.00</button>
+                                <h4 class="producto__descripcion-titulo">MOUSE VSG AQUILAR AIR NEGRO MATE</h4>
+                                <button class="producto__descripcion-boton">$ 25.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto08.jpg" alt="AURICULAR CORSAIR HS60 PRO SURROUND">
                             <div class="producto__descripcion">
-                                <h4>AURICULAR CORSAIR HS60 PRO SURROUND</h4>
-                                <button>$ 68.00</button>
+                                <h4 class="producto__descripcion-titulo">AURICULAR CORSAIR HS60 PRO SURROUND</h4>
+                                <button class="producto__descripcion-boton">$ 68.00</button>
                             </div>
                         </article>
                     </div>
+
+                    <!--Tarjeta de producto-->
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="producto">
                             <img src="../assets/img/producto09.jpg" alt="AURICULAR RAZER KRAKEN V3 X ">
                             <div class="producto__descripcion">
-                                <h4>AURICULAR RAZER KRAKEN V3 X </h4>
-                                <button>$ 88.00</button>
+                                <h4 class="producto__descripcion-titulo">AURICULAR RAZER KRAKEN V3 X </h4>
+                                <button class="producto__descripcion-boton">$ 88.00</button>
                             </div>
                         </article>
                     </div>
@@ -125,6 +162,7 @@
         </section>
     </main>
 
+    <!--Footer-->
     <footer>
         <div class="mt-5 text-center text-white footer__bg-custom">
             <div class="container p-4 pb-0">
