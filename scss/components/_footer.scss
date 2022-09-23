@@ -5,3 +5,23 @@
 .footer__bg-black {
     background-color: black;
 }
+
+//Mapa
+
+$palette: (
+    facebook: #0000FF,
+    twitter: #00FFFF,
+    instagram: #FF00FF,
+);
+
+@each $namers, $colorrs in $palette {
+    .rs-#{$namers} {
+        color: white;
+        font-size: 40px;
+        transition: $transiciones;
+
+        &:hover {
+            color: $colorrs
+        }
+    }
+}

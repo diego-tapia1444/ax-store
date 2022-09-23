@@ -29,7 +29,7 @@ header {
             margin: 0 8px;
             font-weight: 600;
             text-decoration: none;
-            transition: 0.4s;
+            transition: $transiciones;
             padding: 8px 16px;
             border-radius: 100px;
 
@@ -41,8 +41,7 @@ header {
 }
 
 .hamburguesa {
-    display: block;
-    position: relative;
+    @extend .block-relative;
     z-index: 1;
     user-select: none;
     appearance: none;
@@ -52,16 +51,15 @@ header {
     cursor: pointer;
 
     span {
-        display: block;
+        @extend .block-relative;
         width: 35px;
         height: 5px;
-        margin-bottom: 5px;
-        position: relative;
+        margin-bottom: 5px;   
         background-color: white;
         border-radius: 5px;
         z-index: 1;
         transform-origin: 0 0;
-        transition: 0.4s;
+        transition: $transiciones;
     }
 }
 
