@@ -166,17 +166,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 100px; }
+  padding: 20px 20px; }
   .contacto__formulario {
-    max-width: 850px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.19);
-    border: 1px solid black; }
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3); }
 
 .left {
   background: url("../assets/img/form-image.png") no-repeat center;
@@ -184,7 +183,7 @@ header {
   height: 100%; }
 
 .right {
-  padding: 30px 40px; }
+  padding: 40px 40px; }
 
 .formulario {
   position: relative;
